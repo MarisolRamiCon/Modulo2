@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/response" method="get" enctype="text/plain">
+        <fieldset>
+            <legend>Datos personales</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" placeholder="Ingresa tu nombre"> <br>
+        <label for="curp">CURP</label>
+        <input type="text" name="curp" placeholder="Ingresa tu CURP" maxlength="18"> <br>
+        <label for="contra">Contraseña: </label>
+        <input type="password" name="contra"><br>
+        </fieldset>
+        <label for="pasatiempos">Pasatiempos:</label> <br>
+        <label><input type="checkbox" name="pasatiempos" id="">Leer</label>
+        <label><input type="checkbox" name="pasatiempos" id="">Ver series</label>
+        <label><input type="checkbox" name="pasatiempos" id="">Hacer deporte <br></label>
+        <label for="genero">Genero</label> <br>
+        <label for="genero"><input type="radio" name="genero" id="" value="masculino">Masculino</label>
+        <label for="genero"><input type="radio" name="genero" id="" value="femenino">Femenino</label>
+        <label for="genero"> <input type="radio" name="genero" id="" value="otro">Otro</label><br>
+        <label for="Pais">Pais</label> 
+        <select name="Pais" id="">
+            <option value="Ninguno">ninguno</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+        </select> <br>
+        <label for="fecha">Fecha</label>
+        <input type="datetime-local" name="fecha"> <br>
+        <label for="archivo">Sube tu archivo</label> <br>
+        <input type="file" name="archivo">
+        <label for="comentarios">Comentarios</label> <br>
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea> <br>
+        <label for="volumen">Volumen</label>
+        <input type="range" name="volumen" min="0" max="100">
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpiar">
+
+
+    </form>
+</body>
+</html>

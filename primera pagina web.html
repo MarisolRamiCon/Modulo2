@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La primera página web del módulo 2">
+    <title>Mi primera página web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            color: red;
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div >
+        <h1 class="titulo">Animales</h1>
+        <h2 class="titulo">Gato</h2>
+        <p class="parrafo">
+        <blockquote>El gato doméstico <strong>(Felis silvestris catus)</strong>, llamado comúnmente gato,
+            y de forma coloquial minino, michino, y algunos nombres más,
+            es un mamífero carnívoro de la familia Felidae <em>Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Quaerat asperiores nulla nihil sint voluptas,
+                sapiente molestias aperiam deserunt quos,
+                minus fugiat consequatur nam corrupti quo deleniti excepturi. Sapiente, fugit amet.</em>
+        </blockquote>
+        </p>
+
+        <p >Junto con el perro, es el animal doméstico más popular como mascota,
+            como ayuda en la lucha contra roedores o ambas cosas.
+            En 2017, la población mundial estimada de gatos estaba en
+            seiscientos millones de felinos.</p>
+
+        <img src="./imagenes/gato.jpg" alt=" Un gato gris" width="30%">
+
+        <p>Información sacada de <span style="background-color: yellow;">
+                <a href="https://mexico.inaturalist.org/taxa/118552-Felis-catus" target="_blank">iNaturalistMexico</a>
+            </span>
+        </p>
+        <h2 class="titulo">Perro</h2>
+        <h3 class="titulo">Características</h3>
+        <ol>
+            <li>Son mamíferos carnívoros de la familia de los cánidos</li>
+            <li>Tienen músculos potentes y un sistema cardiovascular que les permite alcanzar altas velocidades </li>
+            <li>Tienen dientes para cazar, aguantar y desgarrar las presas </li>
+            <li>Tienen un tercer párpado, llamado membrana nictitante, que protege el ojo</li>
+        </ol>
+
+        <ul>
+            <li>Son mamíferos carnívoros de la familia de los cánidos</li>
+            <li>Tienen músculos potentes y un sistema cardiovascular que les permite alcanzar altas velocidades </li>
+            <li>Tienen dientes para cazar, aguantar y desgarrar las presas </li>
+            <li>Tienen un tercer párpado, llamado membrana nictitante, que protege el ojo</li>
+        </ul>
+
+        <dl>
+            <dt>Nombre cientifico Gato</dt>
+            <dd>Felis catus</dd>
+            <dt>Nombre cientifico Perro</dt>
+            <dd>Canis lupus familiaris</dd>
+        </dl>
+    </div>
+    <div>
+        <h1>Flores</h1>
+    </div>
+    <form action="/response" method="get" enctype="text/plain">
+        <fieldset>
+            <legend id="titulo_formulario">Datos personales</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre"> <br>
+            <label for="curp">CURP</label>
+            <input type="text" name="curp" placeholder="Ingresa tu CURP" maxlength="18"> <br>
+            <label for="contra">Contraseña: </label>
+            <input type="password" name="contra"><br>
+        </fieldset>
+        <label for="pasatiempos">Pasatiempos:</label> <br>
+        <label><input type="checkbox" name="pasatiempos" id="">Leer</label>
+        <label><input type="checkbox" name="pasatiempos" id="">Ver series</label>
+        <label><input type="checkbox" name="pasatiempos" id="">Hacer deporte <br></label>
+        <label for="genero">Genero</label> <br>
+        <label for="genero"><input type="radio" name="genero" id="" value="masculino">Masculino</label>
+        <label for="genero"><input type="radio" name="genero" id="" value="femenino">Femenino</label>
+        <label for="genero"> <input type="radio" name="genero" id="" value="otro">Otro</label><br>
+        <label for="Pais">Pais</label>
+        <select name="Pais" id="">
+            <option value="Ninguno">ninguno</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+        </select> <br>
+        <label for="fecha">Fecha</label>
+        <input type="datetime-local" name="fecha"> <br>
+        <label for="archivo">Sube tu archivo</label> <br>
+        <input type="file" name="archivo">
+        <label for="comentarios">Comentarios</label> <br>
+        <textarea name="comentarios" id="" cols="30" rows="10"></textarea> <br>
+        <label for="volumen">Volumen</label>
+        <input type="range" name="volumen" min="0" max="100">
+        <input type="submit" value="Enviar" id="enviar"> <input type="reset" value="Limpiar">
+
+
+    </form>
+
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th colspan="2">Telefono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alejandro</td>
+                <td>Ramirez</td>
+                <td>555</td>
+                <td>5564</td>
+            </tr>
+            <tr>
+                <td>Benito</td>
+                <td>Galeana</td>
+                <td>5825</td>
+                <td>2324</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+
+</body>
+
+</html>

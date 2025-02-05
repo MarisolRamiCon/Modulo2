@@ -1,0 +1,95 @@
+/*Estilos generales que van a ser vistos en una computadora de escritorio*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.contenedor{
+    display: grid; 
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 80px 1fr 60px;
+    /*Asignar las columnas y filas al header, nav,main, aside y footer*/
+    grid-template-areas: 
+        "header header header"
+        "nav main aside"
+        "footer footer footer";
+    width: 80%;
+    max-width: 1000px;
+    height: 100vh;
+    gap: 10px;
+}
+
+.header{
+    grid-area: header;
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav{
+    grid-area: nav;
+    background: #444;
+    color: white;
+    padding:20px;
+}
+
+.main{
+    grid-area: main;
+    background: white;
+    padding: 20px;
+}
+
+.aside{
+    grid-area: aside;
+    background-color: #cccccc;
+    padding: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Estilo para tablets (máximo de 768px)*/
+@media(max-width: 768px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px auto auto 60px;
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "main aside"
+            "footer footer";
+    }
+
+    .nav{
+        text-align: center;
+    }
+}
+
+/*Estilo para moviles (max de 480px)*/
+@media(max-width:480px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }
+
+    .nav, .aside{
+        text-align: center;
+    }
+    
+}

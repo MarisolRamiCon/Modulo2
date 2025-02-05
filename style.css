@@ -1,0 +1,49 @@
+*{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+    color: darkblue;
+    font-size: medium;
+}
+
+blockquote{
+    background-color: bisque;
+}
+
+
+
+.titulo{
+    color: red;
+    text-decoration: underline;
+    font-size: xx-large;
+    font-style:italic;
+    text-align: center;
+}
+
+form fieldset #titulo_formulario{
+    background-color: brown;
+    font-weight: bold;
+    text-transform:capitalize;
+    color: green;
+}
+
+#caja{
+    width: 30%;
+    border: 1px solid red;
+    padding: 2%;
+    margin: 2%;
+}
+
+img{
+    margin: 2%;
+    padding: 2%;
+    float: right;
+}
+
+#enviar:hover{
+    background-color: blueviolet;
+    padding: 2%;
+    font-size: large;
+
+}
